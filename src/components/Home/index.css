@@ -1,0 +1,129 @@
+.home-container{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    background-image: url('https://res.cloudinary.com/dkrpgt9kd/image/upload/v1691987015/m9ltlsfh49ed77lbmsrh.jpg');
+    background-size: cover;
+  }
+  
+  .profile-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  
+  .name{
+    color: #ffff;
+    font-family: 'Bricolage Grotesque', sans-serif;
+  }
+  .anim-text {
+    font-size: 30px;
+    color: #cc2745;
+    font-weight: bold;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    display: 'inline-block'
+  }
+  .profile{
+    width: 200px;
+    border: #fff solid 2px;
+    border-radius: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    position: relative;
+    transition: transform 0.3s ease-out;
+    order: 1;
+    margin-bottom: 15px;
+  }
+  .profile-content{
+    order: 2;
+    text-align: center;
+  }
+  .profile:hover {
+     border: #cc2745 solid 2px;
+     transform: translateY(10px);
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+  
+  .options-container{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  li{
+    list-style: none;
+    margin-right: 15px;
+  }
+  a{
+    color: #ffff;
+    text-decoration: none;
+    transition: 0.4s ease;
+  }
+  a:hover {
+    color: #294057;
+  }
+  .bio{
+    color: #fff;
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    .bio{
+      font-size: 20px;
+      display: block;
+    }
+    .profile-container{
+      flex-direction: row;
+      justify-content: space-between;
+      width: 80%;
+      align-items: center;
+      border-left: #fff solid 4px;
+      padding-left: 15px;
+      border-top-right-radius: 50px;
+     }
+    
+    .profile{
+      order: 2;
+      border-top-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 60px;
+      border-top-right-radius: 50px;
+      margin-bottom: 0;
+    }
+    .profile-content{
+      order: 1;
+      text-align: left;
+      margin-right: 20px;
+    }
+    .options-container{
+      justify-content: flex-start;
+    }
+  }
+  
+  .btn-grad {
+    background-image: linear-gradient(to right, #000000 0%, #e74c3c  51%, #000000  100%);
+    padding: 10px 20px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .link-resume{
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+  }

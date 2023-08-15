@@ -1,0 +1,70 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.heading{
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 36px;
+}
+.list-container{
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+    width: 90%;
+}
+.list-option{
+    list-style: none;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+    padding: 13px;
+    margin-bottom: 20px;
+    width: 125px;
+    height: 125px;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: transform 0.4s ease-in;
+}
+.list-option:hover{
+    transform: translateX(3px);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.tecnology-img{
+    width: 50px;
+    height: 50px;
+}
+p{
+    font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+   .heading{
+    width: 80%;
+   }
+   .list-container{
+    width: 80%;
+    justify-content: flex-start;
+   }
+   .list-option{
+    width: 135px;
+    height: 135px;
+   }
+   .tecnology-img{
+    width: 60px;
+    height: 60px;
+   }
+   p{
+    font-size: 20px;
+   }
+}
