@@ -20,7 +20,6 @@ const Home = () => {
              <TypeAnimation sequence={[
               'I am Fresher', 1000,
               'Looking for Job', 1000,
-              'Aspiring MERN STACK Developer', 1000,
               "Open to Work", 1000
              
              ]} wrapper="span"
